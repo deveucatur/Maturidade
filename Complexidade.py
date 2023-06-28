@@ -3,7 +3,7 @@ import pandas as pd
 import openpyxl
 from PIL import Image
 
-st.set_page_config(page_title="Complexidade de Cargo", page_icon=Image.open('imagens/logoeucatur.png'))
+st.set_page_config(page_title="Complexidade da Posição", page_icon=Image.open('imagens/logoeucatur.png'))
 
 
 col1, col2, col3 = st.columns(3)
@@ -194,12 +194,12 @@ st.write("---")
 if st.button("Gerar Relatório"):
     st.write("---")
 
-    st.subheader("Relatório de Complexidade do cargo")
+    st.subheader("Relatório de Complexidade da Posição")
 
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        st.text_input(f'Cargo', obter_nome_cargo(nivel_class, grau_class, tipo_carr))
+        st.text_input(f'Posição', obter_nome_cargo(nivel_class, grau_class, tipo_carr))
     with col2:
         st.text_input(f'Nivel', nivel_class)
     with col3:
