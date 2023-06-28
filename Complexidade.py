@@ -101,7 +101,7 @@ def classif_Grau(soma):
 
 
     
-st.title("Complexidade dos cargos")
+st.title("Complexidade da posição")
 col1, col2, col3 = st.columns((0.5, 1.7, 1))
 with col1:
     matricula = st.text_input("Nº Matrícula")
